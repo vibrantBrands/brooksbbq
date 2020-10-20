@@ -1,0 +1,132 @@
+/*----- FAQS ACCORDION -----*/
+    /*----- Accordion -----*/
+    .faq, .faq * {
+        -webkit-box-sizing:border-box; 
+        -moz-box-sizing:border-box; 
+        box-sizing:border-box;
+    }
+     
+    .faq {
+        overflow:hidden;
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+     
+    /*----- Section Titles -----*/
+    .question {
+        width:100%;
+        padding:15px;
+        display:inline-block;
+        border-top:2px solid $gray;
+        transition:all linear 0.15s;
+        /* Type */
+        font-size:18px;
+        color:$alt_blue;
+        text-decoration: none;
+        position: relative;
+        font-family: 'Stag Sans Web Light', sans-serif;
+        line-height: 30px;
+        i {
+            position: absolute;
+            right: 10px;
+            font-size: 30px;
+            transition: 1s all;
+        }       
+    }
+     
+    .question.active, .question:hover {
+        background:$gray;
+        color: $blue;
+        /* Type */
+        text-decoration:none;
+        transition: 1s all;
+    }
+     
+    .question:last-child .question {
+        border-bottom:none;
+    }
+     
+    /*----- Section Content -----*/
+    .answer {
+        padding:15px;
+        display:none;
+        color: $alt_blue;
+        ul {
+            padding-left: 20px;
+            li {
+                list-style-type: disc;
+            }
+        }
+    }
+
+/*----- SERVICES ACCORDION -----*/
+    /*----- Accordion -----*/
+    .accordion, .accordion * {
+        -webkit-box-sizing:border-box; 
+        -moz-box-sizing:border-box; 
+        box-sizing:border-box;
+    }
+     
+    .accordion {
+        overflow:hidden;
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+        h4 {
+            margin: 0;
+            padding: 0;
+        }
+
+    }
+    /*----- Section Titles -----*/
+    .heading, .alt_heading {
+        width: 100%;
+        padding: 15px;
+        display: inline-block;
+        border-bottom: 2px solid $gray;
+        transition:all linear 0.15s;
+        /* Type */
+        font-size:18px;
+        color:$alt_blue;
+        text-decoration: none;
+        position: relative;
+        font-family: 'Stag Sans Web Light', sans-serif;
+        line-height: 30px;
+        i {
+            position: absolute;
+            right: 10px;
+            font-size: 30px;
+            transition: 1s all;
+        }       
+    }
+     
+    .heading.active, .heading:hover {
+        background:$gray;
+        color: $blue;
+        /* Type */
+        text-decoration:none;
+        transition: 1s all;
+    }
+     
+    .heading:last-child .heading {
+        border-bottom:none;
+    }
+     
+    /*----- Section Content -----*/
+    .accordion .content {
+        padding:15px;
+        display:none;
+        color: $alt_blue;
+        ul {
+            padding-left: 20px;
+            li {
+                list-style-type: disc;
+            }
+        }
+    }
+

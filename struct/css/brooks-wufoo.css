@@ -1,0 +1,18 @@
+.redesigned-theme-2018 input.btTxt {
+background-color: #a60f16 !important;
+border: 1px solid #a60f16 !important;
+}
+
+.redesigned-theme-2018 form span.req {
+	color: #a60f16 !important;
+}
+
+.redesigned-theme-2018 .likert caption, .redesigned-theme-2018 .wufoo label.desc, .redesigned-theme-2018 .wufoo legend.desc {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500 !important;
+}
+
+.redesigned-theme-2018 .wufoo li.focused span, .redesigned-theme-2018 .wufoo li div span.choice__text, .redesigned-theme-2018 .wufoo li span, .redesigned-theme-2018 .wufoo li span label, .redesigned-theme-2018 .wufoo ul li span.symbol, .redesigned-theme-2018 li div span.choice__qty, .redesigned-theme-2018 li div span.choice__qty span {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500 !important;
+}

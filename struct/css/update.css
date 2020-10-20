@@ -1,0 +1,94 @@
+#onlineOrdering {
+  height: auto;
+  margin-top: -80px;
+  padding-bottom: 20px; }
+
+.omega .epsilon .callouts ul.calls {
+  display: flex; }
+  @media only screen and (max-width: 600px) {
+    .omega .epsilon .callouts ul.calls {
+      flex-direction: column; } }
+  .omega .epsilon .callouts ul.calls a:hover h2 {
+    background: #72a236;
+    position: relative; }
+    .omega .epsilon .callouts ul.calls a:hover h2:after {
+      bottom: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(114, 162, 54, 0);
+      border-bottom-color: #72a236;
+      border-width: 15px;
+      margin-left: -15px; }
+  .omega .epsilon .callouts ul.calls h2 {
+    background: #aa0e14;
+    color: white;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 10px 0;
+    position: relative;
+    text-align: center; }
+    .omega .epsilon .callouts ul.calls h2:before {
+      display: none; }
+    .omega .epsilon .callouts ul.calls h2:after {
+      bottom: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(170, 14, 20, 0);
+      border-bottom-color: #aa0e14;
+      border-width: 15px;
+      margin-left: -15px; }
+  .omega .epsilon .callouts ul.calls li {
+    overflow: hidden;
+    margin-top: 20px; }
+    @media only screen and (max-width: 600px) {
+      .omega .epsilon .callouts ul.calls li {
+        width: 100%; } }
+    .omega .epsilon .callouts ul.calls li img {
+      width: 100%; }
+
+.primary_nav {
+  border: 0; }
+
+.order-box {
+  background: #a60f16;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px; }
+  .order-box .mobile-preorder {
+    font-size: 20px;
+    color: white;
+    display: none; }
+    .order-box .mobile-preorder span {
+      color: #F9CE68; }
+    .order-box .mobile-preorder a {
+      color: white;
+      text-decoration: underline; }
+    .order-box .mobile-preorder p {
+      color: white;
+      line-height: 25px;
+      margin-top: 30px; }
+  @media only screen and (max-width: 1200px) {
+    .order-box .order-image {
+      display: none; }
+    .order-box .mobile-preorder {
+      display: block; } }
+
+.ccm-image-slider-container {
+  margin-top: 40px;
+  max-width: 1200px; }
+
+#oos_inline {
+  min-height: 1700px; }
+
+/*# sourceMappingURL=update.css.map */

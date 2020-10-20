@@ -1,0 +1,39 @@
+/** NEWSLETTER **/
+
+.newsletter {
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+    border: 1px dashed $text;
+    input {
+        &#email {
+            background-color: $bg;
+            color: #6c6c6c;
+            font-size: 12px;
+            line-height: 36px;
+            border: none;            
+            float: left;
+            width: 65%;
+        }
+        &.submit {
+            display: block;
+            border: none;
+            font-size: 18px;
+            line-height: 42px;
+            float: left;
+            color: $white;
+            background-color: $black;
+            text-transform: uppercase;
+            width: 35%;
+            &:hover {
+                background-color: $hover;
+            }
+        }
+    }
+    @media(max-width: 1070px) {
+        margin-left: 0;
+    }
+    @media(max-width: 982px) {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,78 @@
+/** SOCIAL MEDIA ICONS**/
+
+.socmed {
+    clear: both;
+    margin-bottom: 20px;
+    h2 {
+        font-size: 23px;
+        a {
+            color: $link;
+            text-transform: uppercase;
+            &:hover {
+                color: $hover;
+            }
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            a {
+                margin-left: 10px;
+                i {
+                    color: $white;
+                    background-color: $link;
+                    font-size: 20px;
+                    padding: 15px 18px;
+                    border-radius: 30px;
+                    transition: 0.5s all;
+                }
+                &:hover {
+                    i {
+                        color: $white;
+                        background-color: $hover;
+                        transition: 0.5s all;
+                    }
+                }
+                &.twitter:hover {
+                    i {
+                        color: $white;
+                        background-color: $twitter;
+                        transition: 0.5s all;
+                    }
+                }
+                &.facebook:hover {
+                    i {
+                        color: $white;
+                        background-color: $facebook;
+                        transition: 0.5s all;
+                    }
+                }
+                &.youtube:hover {
+                    i {
+                        color: $white;
+                        background-color: $youtube;
+                        transition: 0.5s all;
+                    }
+                }
+                &.instagram:hover {
+                    i {
+                        color: $white;
+                        background-color: $instagram;
+                        transition: 0.5s all;
+                    }
+                }
+            }
+            &:first-of-type {
+                a {
+                    i {
+                        border-right: none;        
+                    }
+                }
+            }
+        }
+    }
+}

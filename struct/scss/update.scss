@@ -1,0 +1,140 @@
+
+$brooks-red: #a60f16;
+$lg-breakpoint: 1200px;
+$sm-breakpoint: 600px;
+
+#onlineOrdering {
+	height: auto;
+	margin-top: -80px;
+	padding-bottom: 20px;
+}
+
+.omega .epsilon .callouts ul.calls {
+	display: flex;
+
+		@media only screen and (max-width: $sm-breakpoint) {
+	    	flex-direction: column;
+	    }
+
+	a {
+		&:hover {
+			h2 {
+				background: #72a236;
+				position: relative;
+
+				&:after {
+					bottom: 100%;
+					left: 50%;
+					border: solid transparent;
+					content: "";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+					border-color: rgba(114, 162, 54, 0);
+					border-bottom-color: #72a236;
+					border-width: 15px;
+					margin-left: -15px;
+				}
+			}
+		}
+	}
+
+	h2 {
+		background: #aa0e14;
+		color: white;
+		margin-right: 0;
+		margin-top: 0;
+		padding: 10px 0;
+		position: relative;
+	    text-align: center;
+
+	   &:before {
+	   	display: none;
+	   }
+
+	   &:after {
+	   	bottom: 100%;
+		left: 50%;
+		border: solid transparent;
+		content: "";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(170, 14, 20, 0);
+		border-bottom-color: #aa0e14;
+		border-width: 15px;
+		margin-left: -15px;
+	   }
+	}
+
+	li {
+		overflow: hidden;
+		margin-top: 20px;
+
+		@media only screen and (max-width: $sm-breakpoint) {
+	    	width: 100%;
+	    }
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.primary_nav {
+	border: 0;
+}
+
+.order-box {
+	background: $brooks-red;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	padding: 20px;
+
+	.mobile-preorder {
+		font-size: 20px;
+		color: white;
+		display: none;
+
+		span {
+			color: #F9CE68
+		}
+
+		a {
+			color: white;
+			text-decoration: underline;
+		}
+
+		p {
+			color: white;
+			line-height: 25px;
+			margin-top: 30px;
+		}
+	}
+
+	@media only screen and (max-width: $lg-breakpoint) {
+	    
+	    .order-image {
+	    	display: none;
+	    }
+
+	    .mobile-preorder {
+	    	display: block;
+	    }
+	 }
+}
+
+.ccm-image-slider-container {
+	margin-top: 40px;
+	max-width: 1200px;
+}
+
+#oos_inline {
+	min-height: 1700px;
+}
+
+
+ 

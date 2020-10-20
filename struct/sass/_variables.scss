@@ -1,0 +1,25 @@
+@import url("//hello.myfonts.net/count/306931");
+
+@font-face {font-family: 'Campton-Bold';src: url('../webfonts/306931_0_0.eot');src: url('../webfonts/306931_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/306931_0_0.woff2') format('../woff2'),url('../webfonts/306931_0_0.woff') format('../woff'),url('../webfonts/306931_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Campton-Light';src: url('../webfonts/306931_1_0.eot');src: url('../webfonts/306931_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/306931_1_0.woff2') format('../woff2'),url('../webfonts/306931_1_0.woff') format('../woff'),url('../webfonts/306931_1_0.ttf') format('truetype');}
+ 
+
+$black: #000000;
+$white: #ffffff;
+$header_text: #ffffff;
+$header_bg: #000000;
+$text: $black;
+$link: $black;
+$hover: $white;
+$bg: $white;
+$nav_link: $link;
+$nav_hover: $hover; 
+
+$facebook: #3b579a;
+$twitter: #019fe9;
+$linkedin: #007bb7;
+$vimeo: #1ab7ea;
+$youtube: #d22222;
+$pinterest: #bd081c;
+$instagram: #3f729b;
+$flickr: $black;

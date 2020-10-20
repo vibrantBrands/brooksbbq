@@ -1,0 +1,213 @@
+.tab_stuff {
+
+    .left {
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
+        margin-top: 20px;
+        ul.tabs{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            li{
+                background: none;
+                list-style-type: none;
+                color: $black;
+                background-color: $white;
+                display: inline-block;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 20px;
+                .arrow {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 56.5px 0 56.5px 23px;
+                    border-color: transparent transparent transparent $black;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                &.current{
+                    background: $black;
+                    color: $white;
+                    .arrow {
+                        border-color: transparent transparent transparent $white;
+                    }
+                }
+                p {
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding: 0;
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-size: 1.6vw;
+                    text-align: right;
+                    width: 80%;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 900;
+                    span {
+                        font-size: 1.4vw;
+                        font-weight: 700;
+                    }
+                }
+                &:nth-of-type(2) {
+                    .arrow {
+                        border-color: transparent transparent transparent $black;
+                    }
+                    &.current {
+                        .arrow {
+                            border-color: transparent transparent transparent $white;
+                        }
+                        background-color: rgba($black, 0.5);
+                    }
+                }
+                &:nth-of-type(3) {
+                    .arrow {
+                        border-color: transparent transparent transparent $black;
+                    }
+                    &.current {
+                        .arrow {
+                            border-color: transparent transparent transparent $white;
+                        }
+                        background-color: rgba($black, 0.5);
+                        color: $black;
+                    }
+                }
+                &:nth-of-type(4) {
+                    .arrow {
+                        border-color: transparent transparent transparent $black;
+                    }
+                    &.current {
+                        .arrow {
+                            border-color: transparent transparent transparent $white;
+                        }
+                        background-color: rgba($black, 0.5);
+                    }
+                }
+            }
+        }
+        @media(max-width:600px) {
+            width: 100%;
+            ul {
+                &.tabs {
+                    li {
+                        width: 24%;
+                        margin-bottom: 5px;
+                        vertical-align: top;
+                        .arrow {
+                            border-width: 30px 0 30px 20px;
+                        }
+                        p {
+                            font-size: 3vw;
+                            span {
+                                font-size: 2vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media(max-width: 450px) {
+            ul {
+                &.tabs {
+                    li {
+                        width: 23%;
+                        p {
+                            width: 65%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right {
+        display: inline-block;
+        width: 75%;
+        vertical-align: top;
+        overflow: hidden;
+        .tab-content{
+            margin: 20px;
+            display: none;
+            transition: all 1s;
+            background-color: rgba($black, 0.3);
+            &.current{
+                display: inherit;
+                transition: all 1s;
+            }
+            ul {
+                li {
+                    margin-bottom: 8px;
+                }
+            }
+            &#tab-1 {
+                width: 100%;
+                background-color: transparent;
+                div {
+                    width: 100%;
+                }
+            }
+            &#tab-4 {
+                div {
+                    img {
+                        margin-top: -15%;
+                    }
+                }
+            }
+            
+            div {
+                width: 34%;
+                vertical-align: top;
+                position: relative;
+                
+                display: inline-block;
+                &:first-of-type {
+                    overflow: hidden;  
+                    width: 65%;  
+                    max-height: 528px;
+                    img {
+                        width: 150%;
+                        height: auto;
+                        margin-left: -25%;
+                        margin-top: -25%;
+                        display: block;
+                    }
+                }
+                &:nth-of-type(2) {
+                    margin-left: -5px;
+                    .inner {
+                        height: auto;
+                        width: auto;
+                    }
+                }
+                @media(max-width:740px) {
+                    width: 100%;
+                    &:first-of-type {
+                        width: 100%;  
+                        img {
+                            width: 100%;
+                            height: auto;
+                            margin-left: 0;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        @media(max-width: 600px) {
+            width: 100%;
+            .tab-content {
+                width: 100%;
+                margin: 0;
+                transition: all 1s;
+                &#tab-1 {
+                    width: 100%;
+                    background-color: transparent;
+                    div {
+                        width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+}
